@@ -2688,7 +2688,7 @@ input, select, textarea {
 
 			ul.contact li:before {
 				border-radius: 100%;
-				border: solid 2px rgba(255, 255, 255, 0.125);
+				border: solid 2px rgba(255, 255, 255, 1);
 				display: inline-block;
 				font-size: 0.8em;
 				height: 2.5em;
