@@ -6,13 +6,13 @@
 -->
 <html>
 	<head>
-		<title>CVPR-NAS 2022</title>
+		<title>NAS Unseen-Data 2024</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/x-icon" href="./images/logo.svg">
-		<meta http-equiv="refresh" content="0; URL=https://cvprnas.z33.web.core.windows.net/">
-        <link rel="canonical" href="https://cvprnas.z33.web.core.windows.net/">
+		<link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+		<!-- <meta http-equiv="refresh" content="0; URL=https://cvprnas.z33.web.core.windows.net/"> -->
+        <!-- <link rel="canonical" href="https://cvprnas.z33.web.core.windows.net/"> -->
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -26,8 +26,14 @@
 							<div class="logo">
 								<img class ="round" src="./images/logo.svg" style="height: 5em"/>
 							</div>
-							<h2>CVPR-NAS Workshop 2022 </h2>
-								<p> Phase 1 of the competion is now open!</p>
+							<nav id="navbar">
+								<a href="/"> HOME </a>
+								<a class = "space" href="rules"> RULES </a>
+								<a class = "space" href="info"> INFO </a>
+								<a class = "space" href="download"> DOWNLOAD </a>
+							</nav>
+							<h2>NAS Unseen-Data Challenge 2024 </h2>
+								<p> Phase 1 opening Jan 1st</p>
 						</div>
 					</section>
 					
@@ -38,27 +44,34 @@
 							<div class="content">
 								<h2 class="major">The competition</h2>
 								<p>
-									Deep Learning has shown itself to be a powerful tool for solving many challanging machine learning problems. However, it is difficult to identify the correct Deep Learning network to achieve the best possible results for your problem. This is where Neural Architecture Search (NAS) comes in. NAS is all about identifying the best Deep Learning network for a particular dataset. However, most NAS approaches are only evaluated on common datasets such as ImageNet, CIFAR-100, CIFAR-10 or even MNIST. We already know what is a good Deep Learning network for these datasets and as such this doesn't really show how good different NAS approaches are.
+									There is a lot of evidence that Neural Architecture Search can produce excellent models capable of ML tasks on well-known datasets, that is, 
+									datasets like CIFAR-10 and ImageNet where years of research have created a set of best practices to follow to achieve good results. This leads 
+									us to wonder, are we overfitting our NAS algorithms to well-known datasets?
 								</p>
 								<p>
-									The goal of this competition is to design NAS algorithms to work on unseen datasets. You will be provided with a framework in which to develop your NAS approach, along with training and validation datasets to design and test your algorithms. Once submitted, we will run your algorithms on a collection of unknown datasets to see how well they perform.
+									We want to investigate the "real-world" use case of NAS, that is, searching for a state-of-the-art architecture on an entirely novel dataset. 
+									In such a case, there is no existing set of best practices to build from, nor extensive research into optimal architectural patterns, augmentation 
+									policies, or hyperparameter selection. In essence, we are asking how well NAS pipelines can work “out-of-the-box” with little-to-no time for tuning. 
+									To explore this, we have designed this competition to evaluate how well a NAS pipeline fares over unseen novel tasks and datasets.
 								</p>
+								<p>
+									In this competition, you will be asked to design a NAS pipeline, namely a data processor, a NAS algorithm, and a training policy. 
+									This pipeline will then be evaluated on our machines over a number of completely novel datasets: the challenge is to design a pipeline that is flexible enough 
+									to be competitive regardless of the datasets provided to it.
+								</p>
+								<p>
+									This year we are running the competition at AutoML 2024, AutoML is more alligned with NAS than previous venues we think is a more suitable home for the
+									competition.
+								</p>								
 								<p>
 									The competition will be run in three phases:
 								</p>
 								<ul>
-									<li>Phase 1: Local development of your NAS approach using the provided testing framework. Starting January 2022.</li>
-									<li>Phase 2: Validation that your framework works within our test environment. Starting March 2022.</li>
-									<li>Phase 3: Running your NAS approach against our hidden data. Competition ends April 2022.</li>
+									<li>Phase 1: Local development of your NAS approach using the provided testing framework. Starting January 2024.</li>
+									<li>Phase 2: Validation that your framework works within our test environment. Starting June 2022.</li>
+									<li>Phase 3: Running your NAS approach against our hidden data. Starting July 2024.</li>
 								</ul>
-								<p>This is in conjunction with our Workshop to be held at CVPR 2022.</p>
-								<p>We hope you will take part in the competition and look forward to seeing you at CVPR 2022.</p>
-								<!--<a href="#" class="special"> Available Datasets</a> -->
-
-								<p>Download the <strong><em>testing framework</em></strong> from the following link:</p>
-									
-								<p id="download-link"><a class="download-zip" href="https://cvprnas.blob.core.windows.net/download/CVPRNAS_2022_Starting_Kit.tar.gz"> <i class="fa fa-file-archive" aria-hidden="true"></i> &nbsp; CVPR-NAS 2022 Starting Kit</a></p>
-									
+								<p>Results are to be announced at AutoML 2024, with finalists being informed in August.</p>								
 							</div>
 						</div>
 					</section>
@@ -67,9 +80,10 @@
 					<section id="footer" class="wrapper alt spotlight style2">
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
-							<p></p>
+							<p>To stay up-to-date please subscribe to our mailing list. If you have any questions, send us an email.</p>
 							<ul class="contact">
-								<li class="icon brands fa-twitter"><a href="https://twitter.com/CVPR_NAS">twitter.com/CVPR_NAS</a></li>
+								<li class="icon fa-envelope"><a href="lists.ncl.ac.uk/wws/subscribe/nas-workshops"> Mailing list.</a></li>
+								<li class="icon fa-envelope"><a id="email" href="mailto:nas-competition@newcastle.ac.uk?subject=Unseen Data Challenge query">nas-competition@newcastle.ac.uk</a></li>
 							</ul>
 						</div>
 					</section>
@@ -78,9 +92,11 @@
 						<div class="inner">
 							<ul class="logos">
 								<li>
-									<img src="images/NAIL.svg" alt="red hat logo" style="height: 8em;"/>
+									<img src="images/NAIL.svg" alt="Newcastle university AI Lab logo" style="height: 8em;"/>
+									
 								</li>
 							</ul>
+							
 						</div>
 					</section>
 
