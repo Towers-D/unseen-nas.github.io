@@ -33,6 +33,11 @@ body {
 	line-height: 1;
 }
 
+img.unilogo{
+	height: 6em;
+	padding: 0 1em;
+}
+
 img.round {
 	border-radius: 50%;
 	border: 2px solid #FFF;
