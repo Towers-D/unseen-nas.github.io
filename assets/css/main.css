@@ -1371,6 +1371,7 @@ input, select, textarea {
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 3.5em;
 						}
+				
 
 		}
 
@@ -3511,7 +3512,7 @@ input, select, textarea {
 				#banner .inner {
 					width: 100%;
 				}
-
+			
 		}
 
 		@media screen and (max-width: 736px) {
@@ -4147,7 +4148,7 @@ input, select, textarea {
  cover;
 			background-position: center,
  center;
-			margin-top: -6.5em;
+			margin-top: 0;
 			padding-top: 6.5em;
 		}
 
@@ -4156,7 +4157,7 @@ input, select, textarea {
 	@media screen and (max-width: 980px) {
 
 		#footer {
-			margin-top: -4.75em;
+			margin-top: 0;
 			padding-top: 4.75em;
 		}
 
@@ -4185,7 +4186,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		#footer {
-			margin-top: -2.5em;
+			margin-top: 0.5em;
 			padding-top: 2.5em;
 		}
 
