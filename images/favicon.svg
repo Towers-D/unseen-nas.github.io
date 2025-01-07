@@ -3,16 +3,16 @@
 <svg width="100%" height="100%" viewBox="0 0 5906 5906" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g id="Layer1" transform="matrix(7.86526,0,0,7.85154,-1247.22,-2457.45)">
         <g transform="matrix(37.5367,0,0,28.8789,-442.229,-9966.07)">
-            <path d="M36.008,370.467L36.008,381.981L16.006,381.981L36.008,370.467Z" style="fill:rgb(206,169,209);"/>
+            <path d="M36.008,370.467L36.008,381.981L16.006,381.981L36.008,370.467Z" style="fill:rgb(255,200,103);"/>
         </g>
         <g transform="matrix(2.08333,0,0,2.08333,125.239,269.365)">
-            <path d="M16,381.97L376.401,222.36L376.401,20.94L16,381.97Z" style="fill:rgb(197,151,212);"/>
+            <path d="M16,381.97L376.401,222.36L376.401,20.94L16,381.97Z" style="fill:rgb(255,163,0);"/>
         </g>
         <g transform="matrix(2.08333,0,0,2.08333,125.239,269.365)">
-            <path d="M16,381.97L376.401,20.94L175.167,20.94L16,381.97Z" style="fill:rgb(111,53,130);"/>
+            <path d="M16,381.97L376.401,20.94L175.167,20.94L16,381.97Z" style="fill:rgb(189,121,0);"/>
         </g>
         <g transform="matrix(2.08333,0,0,2.08333,125.239,269.365)">
-            <path d="M16,381.97L175.167,20.94L16,20.94L16,381.97Z" style="fill:rgb(82,50,120);"/>
+            <path d="M16,381.97L175.167,20.94L16,20.94L16,381.97Z" style="fill:rgb(147,94,0);"/>
         </g>
     </g>
 </svg>

@@ -7,6 +7,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root {
+	--colour-one-rgba: rgba(147, 94, 0, 1);
+	--colour-one: #935E00;
+	--colour-two: #BD7900;
+	--colour-three: #FFA300;
+	--colour-four: #FFC867;
+	/* When updating colours, change the the 6 characters after the %23 in the fill tag in the sections below to match the above colours */
+	--wrapper-two: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23BD7900%3B' /%3E%3C/svg%3E");
+	--wrapper-three: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23FFA300%3B' /%3E%3C/svg%3E");
+	--wrapper-four: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23FFC867%3B' /%3E%3C/svg%3E");
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -109,8 +121,8 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #523278;
-		background-image: linear-gradient(to top, rgba(82, 50, 120, 0.8), rgba(82, 50, 120, 0.8)), url("../../images/bg.png");
+		background-color: var(--colour-one);
+		background-image: linear-gradient(to top, var(--colour-one-rgba), var(--colour-one-rgba)), url("../../images/bg.png");
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -146,7 +158,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16.5pt;
+		font-size: 18.5pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
@@ -154,7 +166,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 15pt;
 			}
 
 		}
@@ -162,7 +174,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -170,7 +182,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -178,7 +190,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -186,7 +198,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		}
@@ -215,7 +227,7 @@ input, select, textarea {
 			border-bottom: 0;
 			display: block;
 			font-family: Raleway, Helvetica, sans-serif;
-			font-size: 0.8em;
+			font-size: 1em;
 			font-weight: 700;
 			letter-spacing: 0.1em;
 			margin: 0 0 2em 0;
@@ -244,7 +256,7 @@ input, select, textarea {
 				border: solid 2px rgba(255, 255, 255, 0.125);
 				content: '\f105';
 				display: inline-block;
-				font-size: 1.25em;
+				font-size: 1.5em;
 				height: 2em;
 				line-height: 1.75em;
 				margin-right: 0.85em;
@@ -300,45 +312,45 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.2em;
+		font-size: 1.5em;
 	}
 
 	h3 {
-		font-size: 0.9em;
+		font-size: 1.1em;
 	}
 
 	h4 {
-		font-size: 0.7em;
+		font-size: 0.9em;
 	}
 
 	h5 {
-		font-size: 0.7em;
+		font-size: 0.9em;
 	}
 
 	h6 {
-		font-size: 0.7em;
+		font-size: 0.9em;
 	}
 
 	@media screen and (max-width: 736px) {
 
 		h2 {
-			font-size: 1em;
+			font-size: 1.2em;
 		}
 
 		h3 {
-			font-size: 0.8em;
+			font-size: 1em;
 		}
 
 	}
 
 	sub {
-		font-size: 0.8em;
+		font-size: 1em;
 		position: relative;
 		top: 0.5em;
 	}
 
 	sup {
-		font-size: 0.8em;
+		font-size: 1em;
 		position: relative;
 		top: -0.5em;
 	}
@@ -355,7 +367,7 @@ input, select, textarea {
 		border-radius: 5px;
 		border: solid 2px rgba(255, 255, 255, 0.125);
 		font-family: "Courier New", monospace;
-		font-size: 0.9em;
+		font-size: 1.1em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
 	}
@@ -363,7 +375,7 @@ input, select, textarea {
 	pre {
 		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
-		font-size: 0.9em;
+		font-size: 1.1em;
 		margin: 0 0 2em 0;
 	}
 
@@ -2194,7 +2206,7 @@ input, select, textarea {
 		color: #ffffff;
 		display: block;
 		font-family: Raleway, Helvetica, sans-serif;
-		font-size: 0.8em;
+		font-size: 1.1em;
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 0.7em 0;
@@ -2346,7 +2358,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #6F3582;
+			border-color: var(--colour-two);
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2771,7 +2783,7 @@ input, select, textarea {
 				}
 
 				ul.pagination li > .page.active {
-					background-color: #6F3582;
+					background-color: var(--colour-two);
 				}
 
 			ul.pagination li:first-child {
@@ -2939,7 +2951,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #6F3582;
+			background-color: var(--colour-two);
 			box-shadow: none;
 		}
 
@@ -3307,7 +3319,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #6F3582;
+			background: var(--colour-two);
 			border-radius: 5px;
 			display: block;
 			max-width: 100%;
@@ -3491,8 +3503,8 @@ input, select, textarea {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
-				background-color: #6F3582;
-				background-image: linear-gradient(to top, rgba(82, 50, 120, 0.8), rgba(82, 50, 120, 0.8)), url("../../images/bg.png");
+				background-color: var(--colour-two);
+				background-image: linear-gradient(to top, var(--colour-one-rgba), var(--colour-one-rgba)), url("../../images/bg.png");
 				background-size: auto,
  cover;
 				background-position: center,
@@ -3615,8 +3627,8 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #6F3582;
-			background-image: linear-gradient(to top, rgba(82, 50, 120, 0.8), rgba(82, 50, 120, 0.8)), url("../../images/bg.png");
+			background-color: var(--colour-two);
+			background-image: linear-gradient(to top, var(--colour-one-rgba), var(--colour-one-rgba)), url("../../images/bg.png");
 			background-size: auto,
  cover;
 			background-position: center,
@@ -3663,21 +3675,21 @@ input, select, textarea {
 	}
 
 	.wrapper {
-		background-color: #6F3582;
+		background-color: var(--colour-two);
 		margin: 6.5em 0;
 		position: relative;
 	}
 
 		.wrapper:before, .wrapper:after {
-			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141%3B' /%3E%3C/svg%3E");
+			background-image: var(--wrapper-two);
 		}
 
 		.wrapper:before {
-			box-shadow: inset 0 -1px 0 0 #6F3582, 0 1px 0 0 #6F3582;
+			box-shadow: inset 0 -1px 0 0 var(--colour-two), 0 1px 0 0 var(--colour-two);
 		}
 
 		.wrapper:after {
-			box-shadow: inset 0 -1px 0 0 #6F3582, 0 1px 0 0 #6F3582;
+			box-shadow: inset 0 -1px 0 0 var(--colour-two), 0 1px 0 0 var(--colour-two);
 		}
 
 		.wrapper:before, .wrapper:after {
@@ -3725,35 +3737,35 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #C597D4;
+			background-color: var(--colour-three);
 		}
 
 			.wrapper.style2:before, .wrapper.style2:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23C597D4 %3B' /%3E%3C/svg%3E");
+				background-image: var(--wrapper-three);
 			}
 
 			.wrapper.style2:before {
-				box-shadow: inset 0 -1px 0 0 #C597D4 , 0 1px 0 0 #C597D4 ;
+				box-shadow: inset 0 -1px 0 0 var(--colour-three) , 0 1px 0 0 var(--colour-three) ;
 			}
 
 			.wrapper.style2:after {
-				box-shadow: inset 0 -1px 0 0 #C597D4 , 0 1px 0 0 #C597D4 ;
+				box-shadow: inset 0 -1px 0 0 var(--colour-three) , 0 1px 0 0 var(--colour-three) ;
 			}
 
 		.wrapper.style3 {
-			background-color: #CEA9D1;
+			background-color: var(--colour-four);
 		}
 
 			.wrapper.style3:before, .wrapper.style3:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23CEA9D1%3B' /%3E%3C/svg%3E");
+				background-image: var(--wrapper-four);
 			}
 
 			.wrapper.style3:before {
-				box-shadow: inset 0 -1px 0 0 #CEA9D1, 0 1px 0 0 #CEA9D1;
+				box-shadow: inset 0 -1px 0 0 var(--colour-four), 0 1px 0 0 var(--colour-four);
 			}
 
 			.wrapper.style3:after {
-				box-shadow: inset 0 -1px 0 0 #CEA9D1, 0 1px 0 0 #CEA9D1;
+				box-shadow: inset 0 -1px 0 0 var(--colour-four), 0 1px 0 0 var(--colour-four);
 			}
 
 		.wrapper.style4 {
@@ -3805,19 +3817,19 @@ input, select, textarea {
 			}
 
 		.wrapper.spotlight {
-			background-color: #6F3582;
+			background-color: var(--colour-two);
 		}
 
 			.wrapper.spotlight:before, .wrapper.spotlight:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%236F3582%3B' /%3E%3C/svg%3E");
+				background-image: var(--wrapper-two);
 			}
 
 			.wrapper.spotlight:before {
-				box-shadow: inset 0 -1px 0 0 #6F3582, 0 1px 0 0 #6F3582;
+				box-shadow: inset 0 -1px 0 0 var(--colour-two), 0 1px 0 0 var(--colour-two);
 			}
 
 			.wrapper.spotlight:after {
-				box-shadow: inset 0 -1px 0 0 #6F3582, 0 1px 0 0 #6F3582;
+				box-shadow: inset 0 -1px 0 0 var(--colour-two), 0 1px 0 0 var(--colour-two);
 			}
 
 			.wrapper.spotlight .inner {
@@ -3866,35 +3878,35 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight.style2 {
-				background-color: #C597D4;
+				background-color: var(--colour-three);
 			}
 
 				.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23C597D4 %3B' /%3E%3C/svg%3E");
+					background-image: var(--wrapper-three);
 				}
 
 				.wrapper.spotlight.style2:before {
-					box-shadow: inset 0 -1px 0 0 #C597D4 , 0 1px 0 0 #C597D4 ;
+					box-shadow: inset 0 -1px 0 0 var(--colour-three) , 0 1px 0 0 var(--colour-three) ;
 				}
 
 				.wrapper.spotlight.style2:after {
-					box-shadow: inset 0 -1px 0 0 #C597D4 , 0 1px 0 0 #C597D4 ;
+					box-shadow: inset 0 -1px 0 0 var(--colour-three) , 0 1px 0 0 var(--colour-three) ;
 				}
 
 			.wrapper.spotlight.style3 {
-				background-color: #CEA9D1;
+				background-color: var(--colour-four);
 			}
 
 				.wrapper.spotlight.style3:before, .wrapper.spotlight.style3:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23CEA9D1%3B' /%3E%3C/svg%3E");
+					background-image: var(--wrapper-four);
 				}
 
 				.wrapper.spotlight.style3:before {
-					box-shadow: inset 0 -1px 0 0 #CEA9D1, 0 1px 0 0 #CEA9D1;
+					box-shadow: inset 0 -1px 0 0 var(--colour-four), 0 1px 0 0 var(--colour-four);
 				}
 
 				.wrapper.spotlight.style3:after {
-					box-shadow: inset 0 -1px 0 0 #CEA9D1, 0 1px 0 0 #CEA9D1;
+					box-shadow: inset 0 -1px 0 0 var(--colour-four), 0 1px 0 0 var(--colour-four);
 				}
 
 			.wrapper.spotlight.style4 {
@@ -4143,7 +4155,7 @@ input, select, textarea {
 	@media screen and (max-width: 1280px) {
 
 		#footer {
-			background-color: #C597D4;
+			background-color: var(--colour-three);
 			background-size: auto,
  cover;
 			background-position: center,
