@@ -142,4 +142,32 @@
 
 			});
 
+	// Navbar dropdown (tap to open on devices without hover).
+		var $dropdowns = $('#navbar .dropdown');
+
+		if (!window.matchMedia('(hover: hover)').matches) {
+
+			$dropdowns.on('click', '.trigger', function(event) {
+
+				var $dropdown = $(this).closest('.dropdown');
+
+				// First tap opens the menu; a second tap follows the link.
+					if (!$dropdown.hasClass('open')) {
+						event.preventDefault();
+						$dropdowns.removeClass('open');
+						$dropdown.addClass('open');
+					}
+
+			});
+
+			$(document).on('touchstart click', function(event) {
+
+				// Close when tapping outside the dropdown.
+					if ($(event.target).closest('#navbar .dropdown').length == 0)
+						$dropdowns.removeClass('open');
+
+			});
+
+		}
+
 })(jQuery);

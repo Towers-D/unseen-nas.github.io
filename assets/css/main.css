@@ -4285,7 +4285,7 @@ input, select, textarea {
 		font-family: 'Courier New', Courier, monospace;
 	}
 
-	.menu {
+	#navbar .menu {
 		position: absolute;
 		display: none;
 		inset: 100% auto auto 0;
@@ -4304,10 +4304,11 @@ input, select, textarea {
 
 	.dropdown {
 		position: relative;
+		z-index: 10;
 	}
 
 	@media (hover: hover) {
-		.dropdown {
+		#navbar .dropdown {
 			&:has(
 				:is(
 					.trigger:hover,
@@ -4324,3 +4325,39 @@ input, select, textarea {
 			}
 		}
 	}
+
+	#navbar .dropdown.open .menu {
+		display: block;
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	table.results {
+		border: 5px solid #ffffff;
+		width: auto;
+	}
+
+		table.results th, table.results td {
+			white-space: nowrap;
+			vertical-align: middle;
+		}
+
+		table.results th:first-child, table.results td:first-child {
+			white-space: normal;
+		}
+
+		table.results th {
+			text-align: center;
+		}
+
+		table.results colgroup + colgroup {
+			border-left: 3px solid #ffffff;
+		}
+
+		table.results thead {
+			border-bottom: 3px solid #ffffff;
+		}
+
+			table.results .name {
+				white-space: nowrap;
+			}
