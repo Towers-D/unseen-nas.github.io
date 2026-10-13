@@ -151,12 +151,10 @@
 
 				var $dropdown = $(this).closest('.dropdown');
 
-				// First tap opens the menu; a second tap follows the link.
-					if (!$dropdown.hasClass('open')) {
-						event.preventDefault();
-						$dropdowns.removeClass('open');
-						$dropdown.addClass('open');
-					}
+				// Toggle this menu, closing any others.
+					event.preventDefault();
+					$dropdowns.not($dropdown).removeClass('open');
+					$dropdown.toggleClass('open');
 
 			});
 

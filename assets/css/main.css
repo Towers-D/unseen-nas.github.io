@@ -4307,6 +4307,10 @@ input, select, textarea {
 		z-index: 10;
 	}
 
+		.dropdown .trigger {
+			cursor: pointer;
+		}
+
 	@media (hover: hover) {
 		#navbar .dropdown {
 			&:has(
@@ -4332,9 +4336,45 @@ input, select, textarea {
 		pointer-events: auto;
 	}
 
+	.podium {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+
+		.podium .place {
+			border: 3px solid #ffffff;
+			padding: 1.5em 0.5em 1em 0.5em;
+		}
+
+			.podium .place p {
+				margin-bottom: 0;
+			}
+
+		.podium .first {
+			grid-column: 1 / -1;
+			justify-self: center;
+			width: calc(50% - 1em);
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.podium {
+				grid-template-columns: 1fr;
+			}
+
+				.podium .first {
+					width: 100%;
+				}
+
+		}
+
 	table.results {
 		border: 5px solid #ffffff;
 		width: auto;
+		margin-bottom: 0.5em;
 	}
 
 		table.results th, table.results td {
@@ -4361,3 +4401,8 @@ input, select, textarea {
 			table.results .name {
 				white-space: nowrap;
 			}
+
+	p.footnote {
+		font-size: 0.8em;
+		text-align: right;
+	}
