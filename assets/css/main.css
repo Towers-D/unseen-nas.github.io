@@ -4451,3 +4451,44 @@ input, select, textarea {
 		font-size: 0.8em;
 		text-align: right;
 	}
+
+	/* Organisers page: tighter spacing between people. */
+	.wrapper.organiser {
+		margin: 3em 0;
+	}
+
+		.wrapper.organiser:before, .wrapper.organiser:after {
+			height: 3em;
+		}
+
+		.wrapper.organiser:before {
+			top: -3em;
+		}
+
+		.wrapper.organiser:after {
+			bottom: -3em;
+		}
+
+		#page-wrapper .wrapper.organiser .inner {
+			padding: 1.5em 0 0 0;
+		}
+
+		#page-wrapper .wrapper.organiser .image {
+			margin-bottom: 1.5em;
+		}
+
+		/* The last organiser keeps the theme's full gap so it meets the footer cleanly. */
+		.wrapper.organiser:has(+ #footer) {
+			margin-bottom: 6.5em;
+		}
+
+			.wrapper.organiser:has(+ #footer):after {
+				height: 6.5em;
+				bottom: -6.5em;
+			}
+
+	/* Fill the slant below the last footer section so no dark background shows. */
+	#copy:after {
+		background-image: none;
+		background-color: var(--colour-four);
+	}
