@@ -208,8 +208,11 @@ input, select, textarea {
 	a.imglink {
 		border-bottom: none;
 	}
+	div.dropdown{
+		width:fit-content;
+	}
 
-	a {
+	a, div.dropdown {
 		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
@@ -219,12 +222,12 @@ input, select, textarea {
 		text-decoration: none;
 	}
 
-		a:hover {
+		a:hover, div.dropdown:hover {
 			border-bottom-color: transparent;
 			color: #ffffff !important;
 		}
 
-		a.special:not(.button) {
+		a.special:not(.button), a.dropdown.special:not(.button) {
 			text-decoration: none;
 			border-bottom: 0;
 			display: block;
@@ -236,7 +239,7 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-			a.special:not(.button):before {
+			a.special:not(.button):before, div.dropdown.special:not(.button):before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
 				display: inline-block;
@@ -249,7 +252,7 @@ input, select, textarea {
 				font-weight: 900;
 			}
 
-			a.special:not(.button):before {
+			a.special:not(.button):before, div.dropdown.special:not(.button):before {
 				-moz-transition: background-color 0.2s ease-in-out;
 				-webkit-transition: background-color 0.2s ease-in-out;
 				-ms-transition: background-color 0.2s ease-in-out;
@@ -268,11 +271,11 @@ input, select, textarea {
 				width: 2em;
 			}
 
-			a.special:not(.button):hover:before {
+			a.special:not(.button):hover:before, div.dropdown.special:not(.button):hover:before {
 				background-color: rgba(255, 255, 255, 0.025);
 			}
 
-			a.special:not(.button):active:before {
+			a.special:not(.button):active:before, div.dropdown.special:not(.button):active:before {
 				background-color: rgba(255, 255, 255, 0.075);
 			}
 
@@ -3161,18 +3164,18 @@ input, select, textarea {
 			top: 0.7em;
 		}
 
-			#header nav a {
+			#header nav a, #header nav div {
 				border: 0;
 				display: inline-block;
 				padding: 0 1em;
 			}
 
-				#header nav a:before {
+				#header nav a:before, #header nav div:before {
 					float: right;
 					margin-left: 0.75em;
 				}
 
-				#header nav a[href="#menu"] {
+				#header nav a[href="#menu"], #header nav div[href="#menu"] {
 					text-decoration: none;
 					-moz-transition: background-color 0.2s ease-in-out;
 					-webkit-transition: background-color 0.2s ease-in-out;
@@ -3183,7 +3186,7 @@ input, select, textarea {
 					padding: 0 1.35em;
 				}
 
-					#header nav a[href="#menu"]:before {
+					#header nav a[href="#menu"]:before, #header nav div[href="#menu"]:before {
 						-moz-osx-font-smoothing: grayscale;
 						-webkit-font-smoothing: antialiased;
 						display: inline-block;
@@ -3196,16 +3199,16 @@ input, select, textarea {
 						font-weight: 900;
 					}
 
-					#header nav a[href="#menu"]:before {
+					#header nav a[href="#menu"]:before, #header nav div[href="#menu"]:before {
 						content: '\f0c9';
 						line-height: inherit;
 					}
 
-					#header nav a[href="#menu"]:hover {
+					#header nav a[href="#menu"]:hover, #header nav div[href="#menu"]:hover {
 						background-color: rgba(255, 255, 255, 0.025);
 					}
 
-					#header nav a[href="#menu"]:active {
+					#header nav a[href="#menu"]:active, #header nav div[href="#menu"]:active {
 						background-color: rgba(255, 255, 255, 0.075);
 					}
 
@@ -3232,18 +3235,18 @@ input, select, textarea {
 					line-height: inherit;
 				}
 
-					#header nav a {
+					#header nav a, #header nav div {
 						height: inherit;
 						line-height: inherit;
 					}
 
-						#header nav a[href="#menu"] {
+						#header nav a[href="#menu"], #header nav div[href="#menu"] {
 							box-shadow: none;
 							padding: 0 1em;
 							border-radius: 0;
 						}
 
-							#header nav a[href="#menu"]:hover, #header nav a[href="#menu"]:active {
+							#header nav a[href="#menu"]:hover, #header nav a[href="#menu"]:active, #header nav div[href="#menu"]:hover, #header nav div[href="#menu"]:active {
 								background-color: inherit;
 							}
 
@@ -3251,14 +3254,14 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			#header nav a[href="#menu"] {
+			#header nav a[href="#menu"], #header nav div[href="#menu"] {
 				width: 4em;
 				white-space: nowrap;
 				text-indent: 4em;
 				position: relative;
 			}
 
-				#header nav a[href="#menu"]:before {
+				#header nav a[href="#menu"]:before, #header nav div[href="#menu"]:before {
 					width: inherit;
 					position: absolute;
 					top: 0;
@@ -3567,7 +3570,7 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-		body.is-preload #navbar a{
+		body.is-preload #navbar a, body.is-preload #navbar div{
 			opacity: 0;
 			-moz-transform: translateX(0.25em);
 			-webkit-transform: translateX(0.25em);
@@ -4246,7 +4249,7 @@ input, select, textarea {
 
 	}
 
-	#navbar a{
+	#navbar a, #navbar div{
 		-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
 		-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
 		-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, -ms-filter 0.25s ease;
@@ -4265,11 +4268,11 @@ input, select, textarea {
 		filter: blur(0);
 		font-size: 120%;
 		text-decoration: underline;
-		
+		display: inline-block;
 	}
 
-	#navbar a.space {
-		margin-left: 10%;
+	#navbar a.space, #navbar div.space{
+		margin-left: 9%;
 	}
 
 	a#email {
@@ -4280,4 +4283,44 @@ input, select, textarea {
 
 	span.mono-text {
 		font-family: 'Courier New', Courier, monospace;
+	}
+
+	.menu {
+		position: absolute;
+		display: none;
+		inset: 100% auto auto 0;
+		transition: opacity 0.3s ease-in;
+		pointer-events: none;
+
+		@media (hover: hover) {
+			display: block;
+			opacity: 0;
+		}
+	}
+
+	#navbar {
+		display: flex;
+	}
+
+	.dropdown {
+		position: relative;
+	}
+
+	@media (hover: hover) {
+		.dropdown {
+			&:has(
+				:is(
+					.trigger:hover,
+					.trigger:focus-visible,
+					.menu:hover,
+					.menu:focus-within,
+					input:not(:placeholder-shown)
+				)
+			) {
+				.menu {
+					opacity: 1;
+					pointer-events: auto;
+				}
+			}
+		}
 	}
